@@ -98,6 +98,7 @@ const quizTemplate = (data = [], dataLength = 0, options) => {
 	});
 
 	return `
+  <div class="quiz-questions">
     <div class="quiz-question">
       <h3 class="quiz-question__title">${title}</h3>
       <ul class="quiz-question__answers list-reset">
@@ -108,6 +109,7 @@ const quizTemplate = (data = [], dataLength = 0, options) => {
         <button type="button" class="btn btn-reset btn--thirdly quiz-question__btn" data-next-btn>${nextBtnText}</button>
       </div>
     </div>
+  </div>
 	`
 };
 
